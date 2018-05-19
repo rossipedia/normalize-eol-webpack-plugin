@@ -1,6 +1,6 @@
 {
     "name": "normalize-eol-webpack-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "index.js",
     "license": "MIT",
     "author": "Bryan Ross <git@rossipedia.com>",
@@ -21,5 +21,9 @@
         "@types/webpack-sources": "^0.1.4",
         "typescript": "^2.8.3"
     },
-    "files": ["lib", "LICENSE.md", "README.md"]
+    "files": [
+        "lib",
+        "LICENSE.md",
+        "README.md"
+    ]
 }
