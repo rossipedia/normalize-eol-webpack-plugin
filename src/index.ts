@@ -4,7 +4,7 @@ import { RawSource } from 'webpack-sources';
 
 const pluginName = 'NormalizeEolWebpackPlugin';
 
-export default class NormalizeEolWebpackPlugin {
+class NormalizeEolWebpackPlugin {
     apply(compiler: Compiler) {
         compiler.hooks.emit.tap(pluginName, ({ assets }) => {
             Object.keys(assets).forEach(filename => {
@@ -14,3 +14,6 @@ export default class NormalizeEolWebpackPlugin {
         });
     }
 }
+
+export default NormalizeEolWebpackPlugin;
+module.exports = NormalizeEolWebpackPlugin;
