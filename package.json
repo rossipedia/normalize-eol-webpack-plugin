@@ -4,6 +4,10 @@
     "main": "index.js",
     "license": "MIT",
     "author": "Bryan Ross <git@rossipedia.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rossipedia/normalize-eol-webpack-plugin.git"
+    },
     "scripts": {
         "build": "tsc",
         "prepack": "tsc"
