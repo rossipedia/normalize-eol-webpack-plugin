@@ -9,7 +9,10 @@ class NormalizeEolWebpackPlugin {
         compiler.hooks.emit.tap(pluginName, ({ assets }) => {
             Object.keys(assets).forEach(filename => {
                 var src = assets[filename];
-                assets[filename] = new RawSource(eol.auto(src.source()));
+                var source = src.source();
+                if (typeof source === 'string') {
+                    assets[filename] = new RawSource(eol.auto(source));
+                }
             });
         });
     }
